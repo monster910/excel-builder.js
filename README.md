@@ -29,6 +29,26 @@ Build & uglify:
 
 	grunt
 
+Running the Demo
+-----------------
+
+Install http-server:
+
+```
+npm install -g http-server
+```
+
+Then you can start your own development web server to serve static files from the root folder by running:
+
+```
+http-server -a localhost -p 8000 -c-1 demo
+```
+
+Alternatively, you can choose to configure your own web server, such as Apache or Nginx. Just
+configure your server to serve the files under the `demo` directory.
+
+Open the application in a browser with url http://localhost:8000/demo.html
+
 Distributables
 ---------------
 excel-builder.compiled.js -> All files in the EB package and all dependencies.
