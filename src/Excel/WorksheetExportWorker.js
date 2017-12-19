@@ -8,7 +8,7 @@ var start = function(data) {
         worksheet = new Worksheet();
         worksheet.importData(data);
         postMessage({status: 'sharedStrings', data: worksheet.collectSharedStrings()});
-        
+
     });
 };
 
@@ -22,7 +22,7 @@ var onmessage = function(event) {
                 require.config(requireConfig);
                 postMessage({status: "ready"});
                 break;
-            case "start": 
+            case "start":
                 start(data.data);
                 break;
             case "export":
@@ -34,6 +34,3 @@ var onmessage = function(event) {
         }
     }
 };
-
-
-

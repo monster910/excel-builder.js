@@ -61,8 +61,8 @@ module.exports = function(grunt) {
             }
         },
     });
-    
-    
+
+
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-uglify');
@@ -72,4 +72,5 @@ module.exports = function(grunt) {
 
     // Default task(s).
     grunt.registerTask('default', ['jshint:all', 'browserify', 'uglify']);
+    grunt.registerTask('nolint', ['browserify', 'uglify']);
 };

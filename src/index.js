@@ -1,3 +1,4 @@
+"use strict";
 var _ = require('lodash');
 var EBExport = module.exports = {
     Drawings: require('./Excel/Drawings'),
